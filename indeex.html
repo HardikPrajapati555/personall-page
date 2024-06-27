@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Project Portfolio</h1>
+    <button id="login-btn">Login</button>
+    <button id="logout-btn" style="display: none;">Logout</button>
+    <button id="add-project-btn" style="display: none;">Add Project</button>
+  </header>
+  <main>
+    <form id="login-form" style="display: none;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+    
+    <form id="project-form" style="display: none;">
+      <label for="project-name">Project Name:</label>
+      <input type="text" id="project-name" name="project-name" required>
+      
+      <label for="project-link">Project Link:</label>
+      <input type="url" id="project-link" name="project-link" required>
+      
+      <label for="project-github">GitHub Link:</label>
+      <input type="url" id="project-github" name="project-github" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+    
+    <section id="project-list">
+      <h2>Projects</h2>
+      <ul id="projects"></ul>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
